@@ -3,8 +3,8 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import clsx from "clsx";
 
-import Header from "components/Header";
-import Footer from "components/Footer";
+import Header from "app/layout/Header";
+import Footer from "app/layout/Footer";
 
 import meta from "util/data/metadata";
 
@@ -22,7 +22,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         )}
       >
         <Header />
-        <main className="w-full max-w-5xl">{children}</main>
+        <main className="w-full max-w-5xl py-2">{children}</main>
         <Footer />
       </body>
     </html>
