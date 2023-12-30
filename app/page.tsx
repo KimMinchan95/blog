@@ -1,4 +1,4 @@
-const Home: any = () => {
+const Home = () => {
   return <main />;
 };
 
