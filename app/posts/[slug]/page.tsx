@@ -15,7 +15,10 @@ const Post = async ({ params }: Props) => {
 
   return (
     <article>
-      <h1>{post.title}</h1>
+      <div>
+        <h1 className="text-3xl font-bold">{post.title}</h1>
+        <p>{post.desc}</p>
+      </div>
       <Mdx code={post.body.code} />
     </article>
   );
