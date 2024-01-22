@@ -29,7 +29,7 @@ const Post = async ({ params }: Props) => {
   );
 };
 
-export const getPost = async (params: { slug: string }) => {
+const getPost = async (params: { slug: string }) => {
   const slug = params?.slug;
   const post = allPosts.find(post => post._raw.flattenedPath === slug);
 
