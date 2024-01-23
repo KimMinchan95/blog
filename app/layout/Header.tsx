@@ -4,7 +4,7 @@ import navlinks from "util/data/navlinks";
 
 const Header = () => {
   return (
-    <header className="w-full sticky max-w-5xl flex justify-between">
+    <header className="flex items-center w-full sticky max-w-7xl justify-between bg-blue-50 h-10 px-2">
       <nav className="flex gap-2">
         {navlinks.map(({ title, url }) => {
           return (

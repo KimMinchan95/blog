@@ -1,7 +1,7 @@
 import "./globals.css";
+import clsx from "clsx";
 
 import { Inter } from "next/font/google";
-import clsx from "clsx";
 
 import Header from "app/layout/Header";
 import Footer from "app/layout/Footer";
@@ -17,12 +17,12 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en">
       <body
         className={clsx(
-          "min-h-full w-full flex flex-col items-center p-2",
+          "min-h-full w-full flex flex-col items-center p-2 pt-0",
           inter.className,
         )}
       >
         <Header />
-        <main className="w-full max-w-5xl py-2">{children}</main>
+        <main className="w-full max-w-7xl py-2">{children}</main>
         <Footer />
       </body>
     </html>
