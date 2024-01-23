@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div className="flex absolute items-center gap-1 right-1 bottom-1 text-slate-400">
+      <div className="flex absolute items-center gap-1 right-1 bottom-1 text-slate-400 text-sm">
         Thank you for coming to my blog!
         <SmileOutlined />
       </div>
