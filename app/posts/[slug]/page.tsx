@@ -17,14 +17,16 @@ const Post = async ({ params }: Props) => {
 
   return (
     <article>
-      <div className="mx-auto pt-4 pb-1 mb-3 border-b-black-300 border-b-2">
-        <h1 className="text-3xl font-bold">{post.title}</h1>
+      <div className="flex flex-col gap-3 mx-auto pt-4 pb-1 mb-3 border-b-black-300 border-b-2">
+        <h1 className="text-3xl font-bold text-center">{post.title}</h1>
         <p className="text-sm">{post.desc}</p>
         <div className="text-end text-sm">
           {format(post.date, "yyyy-MM-dd")}
         </div>
       </div>
-      <Mdx code={post.body.code} />
+      <div className="px-2 py-5">
+        <Mdx code={post.body.code}></Mdx>
+      </div>
     </article>
   );
 };
