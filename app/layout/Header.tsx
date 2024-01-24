@@ -1,20 +1,32 @@
-import Link from "next/link";
+"use client";
 
-import navlinks from "util/data/navlinks";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import clsx from "clsx";
+
+import NAV_LINKS from "util/data/navlinks";
 
 const Header = () => {
+  const activePathname = usePathname();
   return (
-    <header className="flex items-center w-full sticky max-w-7xl justify-between bg-blue-50 h-10 px-2">
-      <nav className="flex gap-2">
-        {navlinks.map(({ title, url }) => {
+    <header className="flex items-center w-full sticky max-w-7xl justify-center bg-black h-8 px-2">
+      <nav className="flex gap-5 text-white">
+        {NAV_LINKS.map(({ title, url }) => {
+          console.log({ url, activePathname });
           return (
-            <Link href={url} key={url}>
+            <Link
+              href={url}
+              key={url}
+              className={clsx(
+                "font-bold",
+                url === activePathname && "text-gray-300",
+              )}
+            >
               {title}
             </Link>
           );
         })}
       </nav>
-      <div>KimMinchan95</div>
     </header>
   );
 };

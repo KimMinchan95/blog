@@ -3,9 +3,9 @@ interface Navlinks {
   url: string;
 }
 
-const navlinks: Navlinks[] = [
+const NAV_LINKS: Navlinks[] = [
   { title: "Home", url: "/" },
   { title: "Posts", url: "/posts" },
 ];
 
-export default navlinks;
+export default NAV_LINKS;

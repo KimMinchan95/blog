@@ -16,6 +16,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en" className="bg-blue-100">
       <body
+        suppressHydrationWarning
         className={clsx(
           "min-h-full w-full flex flex-col items-center py-7",
           inter.className,
