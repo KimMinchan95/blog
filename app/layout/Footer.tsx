@@ -5,7 +5,7 @@ import { footerItems } from "./util";
 
 const Footer = () => {
   return (
-    <footer className="grid place-content-center w-full max-w-7xl h-16 bg-gray-100 relative">
+    <footer className="grid place-content-center w-full max-w-7xl h-16 relative bg-white border-t-gray-500 border">
       <div className="flex items-center divide-x divide-black text-l">
         {footerItems.map(({ subject, href, Icon }) => (
           <div key={subject} className="px-3">
