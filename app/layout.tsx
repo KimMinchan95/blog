@@ -18,7 +18,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body
         suppressHydrationWarning
         className={clsx(
-          "min-h-full w-full flex flex-col items-center py-7",
+          "min-h-full w-full flex flex-col items-center",
           inter.className,
         )}
       >
