@@ -12,7 +12,6 @@ const Header = () => {
     <header className="flex items-center w-full sticky max-w-7xl justify-center bg-black h-8 px-2">
       <nav className="flex gap-5 text-white">
         {NAV_LINKS.map(({ title, url }) => {
-          console.log({ url, activePathname });
           return (
             <Link
               href={url}
