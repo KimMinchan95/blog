@@ -23,7 +23,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         )}
       >
         <Header />
-        <main className="w-full max-w-7xl py-2 bg-white">{children}</main>
+        <main className="w-full max-w-7xl bg-white">{children}</main>
         <Footer />
       </body>
     </html>
