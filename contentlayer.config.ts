@@ -1,12 +1,15 @@
 import { defineDocumentType, makeSource } from "contentlayer/source-files";
 
+const STRING = "string";
+
 const Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: "**/*.mdx",
   contentType: "mdx",
   fields: {
-    title: { type: "string", required: true },
-    desc: { type: "string", required: true },
+    title: { type: STRING, required: true },
+    topic: { type: STRING, required: true },
+    desc: { type: STRING, required: true },
     date: { type: "date", required: true },
   },
   computedFields: {
