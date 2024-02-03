@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Posts from "./Posts";
 
-import BACKGROUND_WAVE from "public/static/images/background-wave.webp";
+import BACKGROUND_WAVE from "public/static/images/wave.webp";
 
 const Page = () => {
   return (
