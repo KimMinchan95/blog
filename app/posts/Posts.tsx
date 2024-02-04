@@ -11,9 +11,11 @@ const Posts = () =>
     .sort((a: Post, b: Post) => compareDesc(new Date(a.date), new Date(b.date)))
     .map((post: Post) => {
       return (
-        <li key={post.url}>
+        <li key={post.url} className="p-4 bg-white">
+          <div>
+            <Image src={selectImage(post.topic)} alt={post.topic} />
+          </div>
           <Link href={post.url}>{post.title}</Link>
-          <Image src={selectImage(post.topic)} alt={post.topic} />
         </li>
       );
     });
