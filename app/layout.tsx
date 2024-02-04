@@ -3,9 +3,6 @@ import clsx from "clsx";
 
 import { Inter } from "next/font/google";
 
-import Header from "app/layout/Header";
-import Footer from "app/layout/Footer";
-
 import meta from "util/data/metadata";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,13 +15,11 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body
         suppressHydrationWarning
         className={clsx(
-          "min-h-full w-full flex flex-col items-center",
+          "flex flex-col items-center min-h-full",
           inter.className,
         )}
       >
-        <Header />
-        <main className="w-full max-w-7xl bg-white">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );
