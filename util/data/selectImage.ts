@@ -10,6 +10,7 @@ import RECOIl from "public/static/images/banner/RECOIl.png";
 import REDUX from "public/static/images/banner/REDUX.png";
 import TIL from "public/static/images/banner/TIL.png";
 import TYPESCRIPT from "public/static/images/banner/TYPESCRIPT.png";
+import ERROR from "public/static/images/banner/ERROR.png";
 
 interface ImgUris {
   [name: string]: StaticImageData;
@@ -26,6 +27,11 @@ const IMG_URIS: ImgUris = {
   REDUX,
   TIL,
   TYPESCRIPT,
+  ERROR,
 } as const;
 
-export default IMG_URIS;
+const selectImage = (topic: string) => {
+  return IMG_URIS[topic] || ERROR;
+};
+
+export default selectImage;

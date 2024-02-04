@@ -4,7 +4,7 @@ import Image from "next/image";
 import { allPosts, Post } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
 
-import IMG_URIS from "util/data/imgUris";
+import selectImage from "util/data/selectImage";
 
 const Posts = () =>
   allPosts
@@ -13,7 +13,7 @@ const Posts = () =>
       return (
         <li key={post.url}>
           <Link href={post.url}>{post.title}</Link>
-          <Image src={IMG_URIS[post.topic]} alt={post.topic} />
+          <Image src={selectImage(post.topic)} alt={post.topic} />
         </li>
       );
     });
