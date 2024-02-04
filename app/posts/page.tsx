@@ -20,7 +20,7 @@ const Page = () => {
         </div>
       </div>
       <section className="relative z-10 -mt-24 mb-10 max-w-3xl">
-        <ul>
+        <ul className="flex flex-col gap-6">
           <Posts />
         </ul>
       </section>
