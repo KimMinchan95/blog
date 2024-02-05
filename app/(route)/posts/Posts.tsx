@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { format, compareDesc } from "date-fns";
 
-import Chan from "public/images/chan.webp";
+import Chan from "/public/images/chan.webp";
 
 import { allPosts, Post } from "contentlayer/generated";
 import selectImage from "util/data/selectImage";
