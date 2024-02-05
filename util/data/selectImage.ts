@@ -1,16 +1,16 @@
 import { StaticImageData } from "next/image";
 
-import ALGORITHMS from "public/images/banner/ALGORITHMS.png";
-import CSS from "public/images/banner/CSS.png";
-import ETC from "public/images/banner/ETC.png";
-import HTML from "public/images/banner/HTML.png";
-import JAVASCRIPT from "public/images/banner/JAVASCRIPT.png";
-import REACT from "public/images/banner/REACT.png";
-import RECOIl from "public/images/banner/RECOIl.png";
-import REDUX from "public/images/banner/REDUX.png";
-import TIL from "public/images/banner/TIL.png";
-import TYPESCRIPT from "public/images/banner/TYPESCRIPT.png";
-import ERROR from "public/images/banner/ERROR.png";
+import ALGORITHMS from "/images/banner/ALGORITHMS.png";
+import CSS from "/images/banner/CSS.png";
+import ETC from "/images/banner/ETC.png";
+import HTML from "/images/banner/HTML.png";
+import JAVASCRIPT from "/images/banner/JAVASCRIPT.png";
+import REACT from "/images/banner/REACT.png";
+import RECOIl from "/images/banner/RECOIl.png";
+import REDUX from "/images/banner/REDUX.png";
+import TIL from "/images/banner/TIL.png";
+import TYPESCRIPT from "/images/banner/TYPESCRIPT.png";
+import ERROR from "/images/banner/ERROR.png";
 
 interface ImgUris {
   [name: string]: StaticImageData;

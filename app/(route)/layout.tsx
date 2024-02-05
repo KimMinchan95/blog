@@ -1,5 +1,5 @@
-import Header from "@/(route)/layout/Header";
-import Footer from "@/(route)/layout/Footer";
+import Header from "@app/(route)/layout/Header";
+import Footer from "@app/(route)/layout/Footer";
 
 const PageLayout = ({ children }: { children: React.ReactNode }) => {
   return (
