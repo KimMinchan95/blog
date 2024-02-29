@@ -52,11 +52,15 @@ const Home = () => {
           .map((post: Post) => {
             return (
               <li key={post.url} className="flex flex-col gap-1">
-                <time className="text-sm text-neutral-500">
-                  {format(post.date, "yyyy-MM-dd")}
-                </time>
-                <h4 className="text-2xl font-[600] font-serif">{post.title}</h4>
-                <desc>{post.desc}</desc>
+                <Link href={post.url}>
+                  <time className="text-sm text-neutral-500">
+                    {format(post.date, "yyyy-MM-dd")}
+                  </time>
+                  <h4 className="text-2xl font-[600] font-serif">
+                    {post.title}
+                  </h4>
+                  <desc>{post.desc}</desc>
+                </Link>
               </li>
             );
           })}
